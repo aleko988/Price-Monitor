@@ -18,8 +18,19 @@ def home():
 @app.get("/products")
 def get_products():
     products = get_all_products()
-    return {"total": len(products), "products": products}
-
+    return {
+        "total": len(products),
+        "products": [
+            {
+                "title": p[1],
+                "current_price": p[2],
+                "url": p[3],
+                "first_seen": p[4],
+                "last_seen": p[5]
+            }
+            for p in products
+        ]
+    }
 @app.get("/run")
 def run_scraper():
     run()
