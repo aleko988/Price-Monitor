@@ -1,5 +1,5 @@
 # Price Monitor 📊
-
+> Built for e-commerce businesses and resellers who need to track competitor prices without manual checking.
 Automated price monitoring system that tracks product prices and sends instant Telegram alerts when prices change or new products appear.
 
 ## What it does
@@ -27,8 +27,12 @@ Automated price monitoring system that tracks product prices and sends instant T
 | `/dashboard` | View products in browser |
 
 ## Live Demo
-- Dashboard: https://price-monitor-production-f380.up.railway.app/dashboard
-- API: https://price-monitor-production-f380.up.railway.app/products
+Dashboard: https://price-monitor-89ll.onrender.com/dashboard
+API: https://price-monitor-89ll.onrender.com/products
+
+## Screenshots
+![Dashboard](screenshots/Dashboard_screen.png)
+![Telegram Alert](screenshots/telegram_screen.png)
 
 ## Alerts
 - 🔥 Price dropped
