@@ -1,5 +1,7 @@
 # Price Monitor 📊
+
 > Built for e-commerce businesses and resellers who need to track competitor prices without manual checking.
+
 Automated price monitoring system that tracks product prices and sends instant Telegram alerts when prices change or new products appear.
 
 ## What it does
@@ -8,14 +10,14 @@ Automated price monitoring system that tracks product prices and sends instant T
 - Sends instant Telegram notifications for any changes
 - REST API with public endpoints
 - Dashboard to view all tracked products
-- Deployed 24/7 on Railway
+- Deployed 24/7 on Render
 
 ## Tech Stack
 - Python
 - FastAPI
-- PostgreSQL
+- PostgreSQL (Supabase)
 - Telegram Bot API
-- Railway (deployment)
+- Render (deployment)
 - cron-job.org (scheduling)
 
 ## Endpoints
@@ -27,14 +29,11 @@ Automated price monitoring system that tracks product prices and sends instant T
 | `/dashboard` | View products in browser |
 
 ## Live Demo
-Dashboard: https://price-monitor-89ll.onrender.com/dashboard
-API: https://price-monitor-89ll.onrender.com/products
+- Dashboard: https://price-monitor-89ll.onrender.com/dashboard
+- API: https://price-monitor-89ll.onrender.com/products
 
 ## Screenshots
-Dashboard 
 ![Dashboard](screenshots/Dashboard_screen.png)
-
-Telegram Alert
 ![Telegram Alert](screenshots/telegram_screen.png)
 
 ## Alerts
@@ -44,10 +43,10 @@ Telegram Alert
 
 ## Setup
 1. Clone the repo
-2. Create `.env` with `BOT_TOKEN`, `CHAT_ID`, `DATABASE_PUBLIC_URL`
+2. Create `.env` with `BOT_TOKEN`, `CHAT_ID`, `DATABASE_URL`
 3. Install requirements: `pip install -r requirements.txt`
 4. Run locally: `python main_runner.py`
-5. Deploy to Railway and add PostgreSQL
+5. Deploy to Render and connect Supabase PostgreSQL
 
 ## How it works
 ```
