@@ -32,6 +32,7 @@ API: https://price-monitor-89ll.onrender.com/products
 
 ## Screenshots
 ![Dashboard](screenshots/Dashboard_screen.png)
+
 ![Telegram Alert](screenshots/telegram_screen.png)
 
 ## Alerts
